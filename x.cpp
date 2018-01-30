@@ -1,25 +1,27 @@
- 
  /*
- 1
- 0 1
- 1 0 1
- 0 1 0 1
- 1 0 1 0 1
- 0 1 0 1 0 1*/
+  1
+ 3 2
+ 4 5 6
+ 10 9 8 7
+ */
 
 #include<stdio.h>
 int main()
 {
-	int i,j,n;
-	n=7;
+	int i,j,n,s=0,m;
+	n=5;
 	for(i=1;i<n;i++)
-	{
+	{	if(i%2==0)
+		s=s+i;
+		m=s;
 		for(j=1;j<=i;j++)
-		{
-			if(i%2!=0 && j%2!=0 || i%2==0 && j%2==0)
-			printf(" 1");
+		{	
+			if(i%2==0)
+			{
+				printf(" %d",m--);
+			}
 			else
-			printf(" 0");
+			printf(" %d",++s);
 		}
 		printf("\n");
 	}
