@@ -14,7 +14,7 @@ int main()
 		for(i=l;i<=r;i++)
 		{
 		 ar[t][i]=c;
-		 c++;
+		 
 		}
 		t++;
 		t++;
@@ -23,26 +23,26 @@ int main()
 	
 		for(i=t-1;i<=b;i++)
 		{
-			ar[i][r]=c++;
+			ar[i][r]=c;
 		
 		}
 			r--;
 			r--;
 		for(i=r+1;i>=l;i--)
 		{
-			ar[b][i]=c++;
+			ar[b][i]=c;
 			
 		}
 		b--;b--;
 		for(i=b+1;i>=t;i--)
 		{
-			ar[i][l]=c++;
+			ar[i][l]=c;
 		}
 		l++;
 		for(i=l++;i<=r;i++)
 		{
 		 ar[t][i]=c;
-		 c++;
+		 
 		}
 		t++;
 		t++;		
@@ -53,7 +53,6 @@ int main()
 	for(j=0;j<n;j++)
 	{
 		
-		//printf("%d\t",ar[i][j]);
 		if(ar[i][j]>0)
 		{
 			printf("* ");		
